@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>펀북에듀 한국문화유산 DIY 팝업북 23종</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+:root{--main:#006C75;--point:#F97316;--cream:#F8F4EC;--warm:#FFF8E6;--text:#303030;--grad:linear-gradient(135deg,#006C75,#F97316)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#ddd;font-family:Pretendard,'Noto Sans KR',sans-serif;color:var(--text);line-height:1.9;font-size:16px;word-break:keep-all}
+.page{max-width:640px;margin:0 auto;background:#fff;overflow:hidden}
+section{padding:72px 28px;text-align:left}
+.bg-white{background:#fff}.bg-cream{background:var(--cream)}.bg-warm{background:var(--warm)}
+.label{font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--main);margin-bottom:14px;display:block}
+h1{font-size:clamp(40px,10.5vw,56px);font-weight:800;letter-spacing:-.03em;line-height:1.25}
+h2{font-size:clamp(28px,6.2vw,34px);font-weight:700;letter-spacing:-.02em;line-height:1.35;margin-bottom:14px}
+p{font-size:16px;font-weight:400}
+.sub{opacity:.6;font-size:15px}
+.hl{color:var(--point)}
+.ph{background:#E8E8E8;border:2px dashed #CCC;color:#777;display:flex;align-items:center;justify-content:center;text-align:center;font-size:14px;border-radius:16px;min-height:260px;width:100%}
+.ph img,.img img{width:100%;height:100%;object-fit:cover;border-radius:16px;display:block}
+.shadow{box-shadow:0 10px 28px rgba(0,0,0,.08)}
+.num{font-family:'Bebas Neue',sans-serif;font-size:96px;line-height:1;color:var(--point);display:block}
+
+/* 01 HERO */
+.s-hero{text-align:center;padding-top:56px}
+.s-hero .ph{min-height:340px;margin:36px 0 28px}
+.s-hero .sub2{font-size:17px;font-weight:600;color:var(--main)}
+
+/* 02 PROBLEM */
+.s-problem h2{text-align:center}
+.quote{font-size:20px;font-weight:700;letter-spacing:-.02em;padding:18px 0;border-bottom:1px solid #e6e0d4}
+.quote:last-of-type{border-bottom:0}
+.quote:nth-of-type(even){text-align:right;color:var(--main)}
+.s-problem .ph{margin-top:32px;min-height:240px}
+
+/* 03 USP01 — 패턴 A: 텍스트 좌 + 이미지 우 */
+.pa{display:flex;gap:20px;align-items:center}
+.pa .t{flex:1 1 50%}.pa .ph{flex:1 1 50%;min-height:300px}
+.pa h2{font-size:clamp(24px,5.4vw,30px)}
+.pa p{font-size:15px}
+
+/* 04 USP02 — 패턴 B: 풀블리드 이미지 + 하단 텍스트, 그라데이션 */
+.s-grad{background:var(--grad);color:#fff;padding:0 0 72px}
+.s-grad .label{color:#fff;opacity:.85}
+.s-grad .ph{border-radius:0;border:0;border-bottom:2px dashed rgba(255,255,255,.6);background:rgba(255,255,255,.18);color:#fff;min-height:320px}
+.s-grad .t{padding:48px 28px 0}
+.ba{display:flex;gap:10px;margin-top:26px}
+.ba div{flex:1;background:rgba(255,255,255,.18);border:2px dashed rgba(255,255,255,.6);border-radius:14px;padding:44px 8px;text-align:center;font-size:13px}
+
+/* 05 USP03 — 패턴 C: 이미지 배경 + 오버레이 */
+.s-over{position:relative;color:#fff;padding:0;background:#E8E8E8;min-height:640px}
+.s-over .bgph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#777;font-size:14px;border:2px dashed #CCC;margin:0}
+.s-over .bgph img{width:100%;height:100%;object-fit:cover}
+.s-over .ov{position:relative;background:rgba(0,0,0,.6);padding:72px 28px;min-height:640px}
+.s-over .label{color:#fff;opacity:.8}
+.tl{margin-top:32px;border-left:2px solid rgba(255,255,255,.5);padding-left:26px}
+.tl div{position:relative;padding-bottom:26px;font-size:17px;font-weight:600}
+.tl div:last-child{padding-bottom:0}
+.tl div::before{content:"";position:absolute;left:-35px;top:9px;width:16px;height:16px;border-radius:50%;background:var(--point)}
+
+/* 06 PRODUCT */
+.s-prod h2{text-align:center}.s-prod .intro{text-align:center}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 14px;margin-top:32px}
+.item .ph{aspect-ratio:1/1;min-height:0;font-size:12px}
+.item .nm{font-size:14px;font-weight:600;margin-top:8px;text-align:center;line-height:1.5}
+.single{margin-top:32px;padding:20px;border-radius:16px;background:var(--cream);text-align:center;font-weight:700;color:var(--main)}
+.count{text-align:center;margin-bottom:6px}
+
+/* 07 REVIEW */
+.s-review h2{text-align:center}
+.rv{background:#fff;border-radius:16px;padding:22px;margin-top:14px;font-size:15px}
+.rv small{display:block;opacity:.5;font-size:12px;margin-top:6px}
+.trust{margin-top:32px;border-top:1px solid #d9d2c2}
+.trust div{padding:14px 0;border-bottom:1px solid #d9d2c2;display:flex;justify-content:space-between;gap:12px;font-size:15px;font-weight:600}
+.trust span{opacity:.5;font-weight:400;font-size:12px;white-space:nowrap}
+
+/* 08 HOW TO */
+.spec{margin-top:28px;border-top:2px solid var(--main)}
+.spec div{display:flex;padding:14px 0;border-bottom:1px solid #eee;font-size:15px}
+.spec b{width:38%;font-weight:600}.spec span{opacity:.5}
+.s-how .ph{margin-top:28px;min-height:220px}
+
+/* 09 PURCHASE */
+.s-buy{text-align:center}
+.s-buy .price{font-size:15px;margin-bottom:28px}
+.cta{display:block;background:var(--point);color:#fff;text-decoration:none;font-weight:800;font-size:18px;padding:18px;border-radius:999px;margin-top:12px;animation:pulse 1.5s infinite}
+.cta.alt{background:var(--main);animation:none}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(249,115,22,.5)}70%{box-shadow:0 0 0 14px rgba(249,115,22,0)}100%{box-shadow:0 0 0 0 rgba(249,115,22,0)}}
+
+/* 스크롤 효과: JS 미지원 환경에서도 콘텐츠가 보이도록 .js 클래스가 있을 때만 숨김 */
+.js .fade{opacity:0;transform:translateY(18px);transition:opacity .6s ease-out,transform .6s ease-out}
+.js .fade.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.cta{animation:none}.js .fade{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- SECTION 01. HERO BANNER -->
+<section class="s-hero bg-cream">
+  <span class="label">FUNBOOK EDU</span>
+  <h1>만들기의 재미와<br>역사 공부를 <span class="hl">한 권</span>에!</h1>
+  <div class="ph shadow">[HERO 이미지 교체] 완성품 3~4종 입체 컷</div>
+  <p class="sub2">우리 문화유산을 직접 만들며 배우는 DIY 역사 팝업북</p>
+  <p class="sub">보고, 만들고, 완성하며 만나는 우리 역사</p>
+</section>
+
+<!-- SECTION 02. PROBLEM / 공감 -->
+<section class="s-problem bg-white fade">
+  <span class="label">VOICE</span>
+  <h2>아이가 좋아하는 만들기, 배움까지 이어진다면?</h2>
+  <div class="quote">“아이가 너무 좋아해요.”</div>
+  <div class="quote">“아이와 같이 만들었어요.”</div>
+  <div class="quote">“역사책 읽고 연계하기 너무 좋은 것 같아요.”</div>
+  <p class="sub">재미있는 만들기 활동에 역사 이야기를 더한 시간</p>
+  <div class="ph">[공감 이미지 교체] 아이와 함께 만드는 장면 (실제 펀북에듀 제품)</div>
+  <!-- 내부 메모: 위 문장은 경쟁 제품 리뷰 표현. 공개 전 펀북에듀 실제 후기 또는 제작 의도 문구로 교체 -->
+</section>
+
+<!-- SECTION 03. USP 01 / 역사 학습 (패턴 A) -->
+<section class="s-usp1 bg-cream fade">
+  <div class="pa">
+    <div class="t">
+      <span class="label">POINT 01 · 역사 학습</span>
+      <h2>만들면서 배우는 우리 문화유산</h2>
+      <p>눈으로 보고 손으로 완성하는 역사 학습. 책으로 읽었던 역사를 입체적인 경험으로 연결합니다.</p>
+    </div>
+    <div class="ph">[역사 학습 이미지 교체]<br>교재 설명 페이지 + 완성품</div>
+  </div>
+  <!-- 제품별 학습 내용은 실제 교재 확인 후 입력 -->
+</section>
+
+<!-- SECTION 04. USP 02 / 3D 입체 팝업 (패턴 B + 그라데이션) -->
+<section class="s-usp2 s-grad fade">
+  <div class="ph">[3D 팝업 이미지 / GIF 교체]</div>
+  <div class="t">
+    <span class="label">POINT 02 · 3D 입체 팝업</span>
+    <h2>평면에서 입체로,<br>역사를 더 생생하게!</h2>
+    <p>펼치면 살아나는 3D 입체 구조로 문화유산의 형태와 공간을 관찰합니다.</p>
+    <div class="ba"><div>BEFORE<br>[접힌 상태 이미지]</div><div>AFTER<br>[펼친 상태 이미지]</div></div>
+  </div>
+</section>
+
+<!-- SECTION 05. USP 03 / DIY 체험 (패턴 C) -->
+<section class="s-usp3 s-over">
+  <div class="bgph">[DIY 체험 배경 이미지 교체]</div>
+  <div class="ov fade">
+    <span class="label">POINT 03 · DIY 체험</span>
+    <h2>내 손으로 직접 만들고<br>완성하는 즐거움</h2>
+    <p>접고 붙이며 집중하고, 스스로 완성하는 성취감을 느낍니다.</p>
+    <div class="tl">
+      <div>재료 확인</div>
+      <div>접고 붙이기</div>
+      <div>완성된 팝업북 펼치기</div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 06. PRODUCT / 문화유산 23종 -->
+<section class="s-prod bg-white fade">
+  <span class="label">COLLECTION</span>
+  <div class="count"><span class="num" data-count="23">23</span></div>
+  <h2>우리 문화유산 23가지 이야기</h2>
+  <p class="intro sub">궁궐부터 탑과 문화유산까지, 관심 있는 문화유산을 골라 한 권씩 모아보세요.</p>
+  <div class="grid">
+    <div class="item"><div class="ph">[제품01 이미지 교체]</div><div class="nm">[제품명 01]</div></div>
+    <div class="item"><div class="ph">[제품02 이미지 교체]</div><div class="nm">[제품명 02]</div></div>
+    <div class="item"><div class="ph">[제품03 이미지 교체]</div><div class="nm">[제품명 03]</div></div>
+    <div class="item"><div class="ph">[제품04 이미지 교체]</div><div class="nm">[제품명 04]</div></div>
+    <!-- 제품 05~23은 .item 블록을 복사해 추가 (이미지 비율 1:1 유지) -->
+  </div>
+  <div class="single">낱권 9,000원 · 한 권씩 골라 구매할 수 있어요</div>
+</section>
+
+<!-- SECTION 07. REVIEW / 고객 경험 및 신뢰 -->
+<section class="s-review bg-cream fade">
+  <span class="label">REVIEW</span>
+  <h2>직접 만들어본 고객들의 이야기</h2>
+  <div class="rv">“[펀북에듀 실제 구매 후기 1]”<small>실제 후기 확보 후 교체</small></div>
+  <div class="rv">“[펀북에듀 실제 구매 후기 2]”<small>실제 후기 확보 후 교체</small></div>
+  <div class="rv">“[펀북에듀 실제 구매 후기 3]”<small>실제 후기 확보 후 교체</small></div>
+  <div class="trust">
+    <div>초등 사회·미술 교과서 등재 <span>증빙 자료 첨부</span></div>
+    <div>교육청 전국교육자료전 우수등급 수상 <span>증빙 자료 첨부</span></div>
+    <div>KC 어린이 안전인증 <span>인증번호·적용 제품 표기</span></div>
+    <div>Made in Korea · 국내 제작 <span>증빙 자료 첨부</span></div>
+  </div>
+  <!-- 브랜드 실적과 개별 상품 인증은 구분해서 표기 -->
+</section>
+
+<!-- SECTION 08. HOW TO USE / 제품 구성과 사용 안내 -->
+<section class="s-how bg-white fade">
+  <span class="label">HOW TO</span>
+  <h2>준비는 간편하게,<br>완성은 뿌듯하게!</h2>
+  <p>준비된 재료로 차근차근 만드는 DIY. 집에서도, 방학에도 즐기는 역사 체험입니다.</p>
+  <div class="spec">
+    <div><b>권장 연령·학년</b><span>[관리자 입력]</span></div>
+    <div><b>낱권 구성품</b><span>[관리자 입력]</span></div>
+    <div><b>제작 난이도</b><span>[관리자 입력]</span></div>
+    <div><b>제작 소요 시간</b><span>[관리자 입력]</span></div>
+    <div><b>완성품 크기</b><span>[관리자 입력]</span></div>
+    <div><b>구매 전 확인사항</b><span>[관리자 입력]</span></div>
+  </div>
+  <div class="ph">[구성품 · 제작 순서 · 완성품 사진 교체]</div>
+</section>
+
+<!-- SECTION 09. PURCHASE / 구매 유도 -->
+<section class="s-buy bg-cream fade">
+  <span class="label">GET STARTED</span>
+  <h2>오늘은 어떤 문화유산을<br>만들어볼까요?</h2>
+  <p class="price">낱권 <span class="hl" style="font-weight:700">9,000원</span></p>
+  <a class="cta" href="#">자사몰에서 고르기</a>
+  <a class="cta alt" href="#">쿠팡에서 보기</a>
+  <a class="cta alt" href="#">스마트스토어에서 보기</a>
+</section>
+
+</div>
+
+<script>
+/* 스마트스토어 적용 시 스크립트는 제거됨 → .js 클래스가 없으면 모든 콘텐츠가 기본 노출 */
+(function(){
+  document.documentElement.classList.add('js');
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      e.target.classList.add('in');
+      var n=e.target.querySelector('[data-count]');
+      if(n){var t=+n.dataset.count,s=null;(function f(ts){s=s||ts;var p=Math.min((ts-s)/1500,1);n.textContent=Math.round(t*p);if(p<1)requestAnimationFrame(f)})(performance.now())}
+      io.unobserve(e.target);
+    });
+  },{threshold:.15});
+  document.querySelectorAll('.fade').forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
